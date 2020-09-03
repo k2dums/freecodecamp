@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500&display=swap');
+
+
+body{
+    background:black;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    background:black url("../images/shooting_star.jpg")center/cover no-repeat fixed;
+    opacity:0.9;
+}
+
+
+
+.title{
+    max-resolution: top 5px;0px;
+    text-align: center;
+    color:white;
+    font-family: 'Lobster', cursive;
+}
+
+main{
+    margin:auto;
+    margin-bottom:30px;
+    background:white;
+    width:auto;
+    max-width:550px;
+    border-radius:15px;
+    box-shadow:-22px 5px 29px -13px rgba(144,164,173,1), 22px 5px 29px -13px rgba(144,164,173,1);
+
+}
+
+.checko,.reco{
+    display:block;
+}
+
+
+.left_item{
+    display:inline-block;
+   
+    width:40%;
+    text-align:right;
+    margin:0px;
+    
+}
+
+.right_item{
+    position: relative;
+    left: 0;
+    width:48%;
+    background:yellow;
+    text-align:left;
+}
+
+.input_box{
+    margin-bottom:19px;
+   
+}
+
+.text_box{
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align:center;
+}
+.text_box p{
+    margin:0;
+}
+
+.text_box input{
+    width: 400px;
+}
+
+
+fieldset p{
+    text-align:center;
+}
+
+fieldset .radio{
+    width:30%;
+    margin:auto;
+}
+
+.submit_box{
+    display: block;
+    width:100px;
+    margin: 0 auto;
+    
+}
+
+input.submit_box{
+    color: white;
+    background:black;
+    border-radius:7px;
+}
+
+ .text_box textarea{
+    width:500px;
+    height:200px;
+    overflow:auto;
+    
+    resize: none;
+}

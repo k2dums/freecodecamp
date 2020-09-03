@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,700&display=swap');
+body{
+    background:#EBEBEB;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .container{
+    padding:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+    background:#ced7d8; 
+    border-radius:15px;
+}
+
+
+h1#title,#main h2{
+    text-align:center;
+}
+
+
+#title h1{
+    font-size:35px;
+    font-weight:bolder;
+
+}
+
+
+  #img-div #image-caption{
+      text-align: center;
+      font-weight:normal;
+      font-size: large;
+  }
+
+  figure#img-div{
+    padding:30px 30px 0px 30px;
+    background-color:#EBEBEB;
+    margin:auto;
+    border-radius:20px;
+}
+
+
+   #img-div #image{
+      width:100%;
+      height:auto;
+  }
+
+
+
+  #main h2{
+    margin:50px 0 50px 0;
+    margin-top:100px;
+  
+  }
+
+  #main #tribute-info li{
+    margin:0px 0px 20px 0px;
+}
+
+
+
+
+  #tribute-info blockquote,ul{
+    width: 60%;
+    margin: auto;
+
+  }
+
+#tribute-info blockquote p{
+    font-size:30px;
+    font-style:italic;
+}
+
+  #tribute-info blockquote footer{
+    width: 25%;
+    margin:auto; 
+    position: relative;
+    left:300px;
+  
+  }
+
+footer#tribute-link{
+    font-size: 20px;
+    width:50%;
+    margin:auto;
+}
+
+
+
+  /* This is for the  Responisive Features */
+
+  @media (min-width: 550px){
+      figure#img-div{
+          width:70%;
+      }     
+
+  }
+
+
+  @media (max-width: 1100px){
+    #tribute-info blockquote footer{
+        width: 25%;
+        margin:auto; 
+        position: relative;
+        left:200px;
+      
+      }
+ }
+
+
+ @media (max-width: 685px){
+    #tribute-info blockquote footer{
+        width: initial;
+        margin:initial; 
+        position: static;
+      
+      }
+   
