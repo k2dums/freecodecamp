@@ -14,7 +14,6 @@ body{
 
 
 .title{
-    max-resolution: top 5px;0px;
     text-align: center;
     color:white;
     font-family: 'Lobster', cursive;
@@ -33,6 +32,14 @@ main{
 
 .checko,.reco{
     display:block;
+}
+
+.checko input{
+    width:30px;
+    height:30px;
+    position: relative;
+    top:8px;
+    left:20px;
 }
 
 
@@ -55,7 +62,15 @@ main{
 
 .input_box{
     margin-bottom:19px;
-   
+}
+
+.input_box input,.text_box input,.text_box textarea,input.submit_box{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius:5px;
+}
+
+.input_box input{
+    width:35%;
 }
 
 .text_box{
@@ -71,6 +86,10 @@ main{
     width: 400px;
 }
 
+
+.text_box input[type="text"]::placeholder {  
+ text-align: center;
+} 
 
 fieldset p{
     text-align:center;
