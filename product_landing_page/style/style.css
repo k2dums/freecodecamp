@@ -1,0 +1,87 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+
+nav#menu_container{
+display:flex;
+background:yellow;
+}
+
+#menu_items{
+/* background-color:red; */
+flex:0.3;
+}
+
+
+
+.test{
+    position: relative;
+    height:100%;
+    /* background-color:green; */
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size:1.75rem;
+    z-index: 2;
+}
+.square{
+position:absolute;
+display: inline-block;
+height:50%;
+width:27%;
+background-color:seagreen;
+transform: rotate(45deg) translateX(-40px) translateY(90px);
+z-index:1;
+}
+.one,.two,.three,.four{
+background-color: seagreen;
+width:max-content;
+}
+.one{
+
+}
+.two{
+letter-spacing:0.1rem;
+}
+
+.three{
+    letter-spacing:0.4rem;
+}
+.four{
+    letter-spacing:1rem;
+}
+
+#menu_title{
+background-color:yellow;
+flex:2;
+text-transform:uppercase;
+font-size:3.5rem;
+letter-spacing:4.5rem;
+
+}
+
+h1#title{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#menu_items ul{
+    padding-inline-start:0px;
+    margin-block-start: 0px;
+}
+#menu_items ul li{
+    list-style:none; 
+}
+
+main{
+    position:relative;
+    z-index:2;
+    background-color:cyan;
+    height:100vh;
+}
