@@ -4,20 +4,45 @@
     box-sizing:border-box;
 }
 
+body{
+    background:url("../images/pexels-sunyu-kim-2047397.jpg") bottom;
+    color:whitesmoke;
+}
+
+h2{
+    text-align: center;
+    font-size:3em;
+}
+/* Header Styling */
 
 nav#menu_container{
-display:flex;
-background:yellow;
+display:flex;/* This flex is the row seperated flex  */
+/* background:url("../images/pexels-sunyu-kim-2047397.jpg") center  no-repeat fixed; */
 }
 
 #menu_items{
-/* background-color:red; */
 flex:0.3;
 }
 
+#menu_title{
+    flex:2;
+    text-transform:uppercase;
+    font-size:3.5rem;
+    letter-spacing:4.5rem;
+    
+}
+
+#menu_items ul{
+    padding-inline-start:0px;
+    margin-block-start: 0px;
+}
+
+#menu_items ul li{
+    list-style:none; 
+}
 
 
-.test{
+#navs{
     position: relative;
     height:100%;
     /* background-color:green; */
@@ -26,62 +51,189 @@ flex:0.3;
     justify-content:space-between;
     text-transform: uppercase;
     font-weight: bolder;
-    font-size:1.75rem;
+    font-size:1.5em;
     z-index: 2;
 }
+#navs a{
+    text-decoration: none;
+    color:white;
+}
+
 .square{
 position:absolute;
 display: inline-block;
 height:50%;
 width:27%;
-background-color:seagreen;
-transform: rotate(45deg) translateX(-40px) translateY(90px);
+transform: rotate(52deg) translateX(-60px) translateY(90px);
 z-index:1;
+background-color:grey;
+opacity:0.5;
 }
-.one,.two,.three,.four{
-background-color: seagreen;
+
+#one,#two,#three,#four{
 width:max-content;
-}
-.one{
 
 }
-.two{
-letter-spacing:0.1rem;
-}
 
-.three{
-    letter-spacing:0.4rem;
-}
-.four{
-    letter-spacing:1rem;
-}
-
-#menu_title{
-background-color:yellow;
-flex:2;
-text-transform:uppercase;
-font-size:3.5rem;
-letter-spacing:4.5rem;
+#one{
 
 }
+#two{
+letter-spacing:0.1em;
+}
+
+#three{
+    letter-spacing:0.3em;
+}
+#four{
+    letter-spacing:0.7em;
+}
+
 
 h1#title{
     display:flex;
     flex-direction: column;
     text-align: center;
+    color:white;
 }
 
-#menu_items ul{
-    padding-inline-start:0px;
-    margin-block-start: 0px;
-}
-#menu_items ul li{
-    list-style:none; 
-}
+/* This is where the Header styling ends */
 
+
+
+ 
 main{
-    position:relative;
+    position: relative;;
     z-index:2;
-    background-color:cyan;
-    height:100vh;
+    /* background:#156969; */
+    background:url("../images/pexels-sunyu-kim-2047397.jpg") bottom;
+ 
 }
+
+#about_us_container{
+    margin-right:50px;
+    margin-left:50px;
+    
+}
+#about_us_container h2{
+    text-align: center;
+    padding-top: 80px;
+}
+
+#about_us{
+    background-color: rgba(0,0,0,0.5);
+    margin-top:40px;
+    display:flex;
+    color:whitesmoke;
+    font-size:1.2em;
+    width:fit-content;
+}
+
+#about_us_img{
+    text-align:center;
+    flex:1.7;
+    background-color: red;
+    margin-right:80px;
+}
+
+#about_us_text p::first-line {
+    line-height:1em;
+  }
+#about_us_text{
+    flex:2;
+    line-height:1.9em;
+    text-align:left;
+}
+
+#why_us_section_container h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+#why_us_section_container{
+    margin-top:150px;
+    margin-right:50px;
+    margin-left:50px;
+}
+
+#why_us_section .card_container{
+    display: flex;
+    flex-direction: column;
+    font-size:1.2em;
+    color:whitesmoke;
+}
+
+#why_us_section .card_1,#why_us_section .card_2,#why_us_section .card_3{
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    margin-bottom:50px;
+}
+#why_us_section .card_img{
+    flex:1.7;
+    text-align:center;
+    background:red;
+    margin-right:80px;
+}
+
+#why_us_section .card_text{
+    flex:2;    
+}
+
+#why_us_section .card_text p{
+    width:70%;
+    line-height:1.9em;
+}
+
+#why_us_section .card_text p::first-line {
+    line-height:1em;
+  }
+
+
+  #product_container{
+    margin-right:50px;
+    margin-left:50px;
+    padding:0;
+  }
+
+  #product_container h2{
+      margin-bottom:50px;
+  }
+
+  
+
+  #product_container .card_container{
+      text-align:center;
+      background-color: rgba(0,0,0,0.5);
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+  }
+
+  #product_container .card_1,#product_container .card_2,#product_container .card_3{
+      background:red;
+      width:350px;
+      height:300px;
+  }
+
+  #delivery_option_container{
+    margin-right:50px;
+    margin-left:50px;
+  }
+
+  #delivery_option_container h2{
+      margin-top:50px;
+      margin-bottom:50px;
+}  
+  #delivery_option_container .card_container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  #delivery_option_container .card_1,#delivery_option_container .card_2,#delivery_option_container .card_3{
+    background:red;
+    width:300px;
+    height:400px;
+  }
