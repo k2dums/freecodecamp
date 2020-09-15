@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
 
-    <header>
-        <nav id="menu_container">
+    <header id="header">
+        <nav id="nav-bar">
             <div id="menu_items">
                 <div class="square"></div>
                         <div id="navs">
-                            <span id="one"><a href="#menu_title">Home</a></span>
-                            <span id="two"><a href="#product_container">Product</a></span>
-                            <span id="three"><a href="#about_us_container">About Us</a></span>
-                            <span id="four"><a href="#footer">Contact</a></span>
+                            <span id="one" ><a class="nav-link" href="#menu_title">Home</a></span>
+                            <span id="two" ><a class="nav-link" href="#product_container">Product</a></span>
+                            <span id="three"><a class="nav-link" href="#about_us_container">About Us</a></span>
+                            <span id="four"><a class="nav-link" href="#footer">Contact</a></span>
                         </div>
             </div>
             <div id="menu_title">
-                <h1 id="title"><span>Just</span><span>Sales</span></h1>
+                <div class="header-img"><img src="https://img.icons8.com/wired/64/000000/one-free.png"/></div>
+                <h1 id="title">
+                    <span id="first_liner">Just</span><span id="second_liner">Sales</span>
+                </h1>
                 <hr>
             </div>
         </nav>
@@ -32,6 +35,20 @@
 
 
     <main>
+        <form action="https://www.freecodecamp.com/email-submit">
+            <div class="input_box">
+                <div id="email_box">
+                    <input id="email" type="email" placeholder="Enter Email">
+                </div>
+                
+                <div id="submit">
+                    <input type="submit" id="submit">
+                </div>
+                
+            </div>
+            
+        </form>
+        
 
 
          <section id="about_us_container">
@@ -114,11 +131,11 @@
 
 
 
-        <section id="video_section_container">
+        
             <div class="video_section">
-                
+                <iframe width="1305" height="480" src="https://www.youtube.com/embed/yNcQNKw65KI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </section>
+        
 
     <section id="delivery_option_container">
         <h2>Delivery Option and Pricing</h2>
@@ -130,14 +147,15 @@
                     </span>
                     Fast
                 </h3>
-                <div class="select_box">
-                    <input type="button" value="Select">     
-                </div>
+               
                 <div class="card_text">
                     <h4>19.99$</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, debitis?</p>
                 </div>
                
+                <div class="select_box">
+                    <input type="button" value="Select">     
+                </div>
                 
             </div>
 
@@ -150,15 +168,15 @@
                     </span>
                     Faster
                 </h3>
-                <div class="select_box">
-                    <input type="button" value="Select">
-                </div>
+                
                 <div class="card_text"> 
                     <h4>$29.99</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, voluptatem..</p>
                 </div>
                
-                
+                <div class="select_box">
+                    <input type="button" value="Select">
+                </div>
                 
             </div>
 
@@ -171,30 +189,33 @@
                     </span>
                     Dash
                 </h3>
-                <div class="select_box">
-                    <input type="button" value="Select">
-                </div>
+               
                 <div class="card_text"> 
                     <h4>$39.99</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusantium?
                     </p>
                 </div>
-              
+                <div class="select_box">
+                    <input type="button" value="Select">
+                </div>
                 
             </div>
     </div>  
     </section>
+
+    <footer>
+        <div id="footer_container">
+            <div>Terms</div>
+            <div>Privacy</div>
+            <div>Contact</div>
+            </div>
+            <p>&#169;2016,Just Sales</p>
+    </footer>
+    
    
     </main>
 
 
-<footer id="footer">
-<div>
-    
-</div>
-<div></div>
-<div></div>
-</footer>
 
 
 
