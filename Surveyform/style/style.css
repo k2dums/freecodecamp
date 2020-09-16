@@ -7,20 +7,27 @@ body{
     background:black;
     font-size: 30px;
     font-family: 'Teko', sans-serif;
-    background:black url("../images/shooting_star.jpg")center/cover no-repeat fixed;
+    background:black url("https://www.wallpaperflare.com/static/817/625/70/digital-art-clouds-shooting-stars-night-wallpaper-preview.jpg")center/cover no-repeat fixed;
     opacity:0.9;
     min-width: 200px;
 }
 
 
 
-.title{
+#title{
     text-align: center;
     color:white;
     font-family: 'Lobster', cursive;
 }
 
-main{
+
+#description{
+    text-align: center;
+    color:white;
+    font-size:1em;;
+}
+
+form{
     margin:auto;
     margin-bottom:30px;
     background:white;
@@ -65,7 +72,7 @@ main{
     margin-bottom:19px;
 }
 
-.input_box input,.text_box input,.text_box textarea,input.submit_box{
+.input_box input,.text_box input,.text_box textarea,input#submit{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius:5px;
 }
@@ -101,14 +108,14 @@ fieldset .radio{
     margin:auto;
 }
 
-.submit_box{
+#submit{
     display: block;
     width:100px;
     margin: 0 auto;
     
 }
 
-input.submit_box{
+input#submit{
     color: white;
     background:black;
     border-radius:7px;
@@ -126,3 +133,23 @@ input.submit_box{
     
     resize: none;
 }
+
+#dropdown{
+  text-align:center;
+}
+
+#dropdown p{
+ display:inline;
+}
+#dropdown select{
+  display:block;
+   margin:auto;
+   background:black;
+   color:whitesmoke;
+   height:2em;
+   width:10em;
+   margin-bottom:20px;
+   text-indent:35%;
+
+}
+

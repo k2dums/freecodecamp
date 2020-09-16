@@ -15,101 +15,101 @@
 
 
 
-
-    <h1 class="title">Just Another Survey</h1>
-    <main class="survey">
-
-
-
-        <div class="input_box">
-
-            <label class="left_item"for="Name">Name</label>
-            <input name="Name" id="Name"type="text" placeholder="Batman">
+    <h1 id="title">Just Another Survey</h1>
+    <div id="description"><p>--Thank you for taking this survey--</p></div>
+    <form id="survey_form">
+   
+      <div class="input_box">
+   
+        <label class="left_item" for="name">Name</label>
+        <input name="name" id="name" type="text" placeholder="Batman">
+      </div>
+   
+      <div class="input_box">
+        <label for="email" class="left_item">Email</label>
+        <input name="email" id="email" type="Email" placeholder="batman@gmail.com">
+      </div>
+   
+      <div class="input_box">
+        <label for="number" class="left_item">Age </label>
+        <input name="number" id="number" type="number" placeholder="Enter your age" max="199" min="10">
+      </div>
+   
+      <fieldset>
+        <p>Recommend to your Friend</p>
+   
+        <div class="radio">
+          <label class="reco">
+            <input name="Recommend" type="radio">Yes
+          </label>
+   
+          <label class="reco ">
+            <input name="Recommend" type="radio"> No
+          </label>
+   
+          <label class="reco">
+            <input name="Recommend" type="radio">Definently
+          </label>
+   
         </div>
-
-
-
-        <div  class="input_box">
-            <label for="Email" class="left_item">Email</label>
-            <input name="Email" id="Email" type="email" placeholder="batman@gmail.com">
-        </div>
-
-
-           
-        <div  class="input_box">
-            <label for="Age" class="left_item">Age </label>
-            <input name="Age" id="Age"type="number" value="999">
-        </div>
-
-            
-           
-
-
-          <fieldset>
-            <p>Recommend to your Friend</p>
-
-            <div class="radio">
-                <label class="reco">
-                    <input name="Recommend" type="radio">Yes
-           </label>
-
-            <label class="reco ">
-              <input name="Recommend" type="radio"> No
-           </label>
-
-             <label class="reco">
-                 <input name="Recommend" type="radio">Definently
-            </label>
-
-            </div>
-            
-          </fieldset>
-
-                   
-
-
-
-
-
-
-            <div class="text_box">
-                <p>Fav about this</p>
-                <input type="text" placeholder="I am Batman!" >
-            </div>
-
-
-
-
-            <fieldset>
-
-                <p>Check all that apply</p>
-                <label class="checko"> <p class="left_item">Apple </p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"> <p class="left_item">Bake </p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Coke</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Duke</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Egg</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Frog</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Great</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">Hero</p><input type="checkbox" name="check" id="check"></label>
-                <label class="checko"><p class="left_item">India</p><input type="checkbox" name="check" id="check"></label>
- 
-            </fieldset>
-               
-  
-
-            <div class="text_box details">
-                <label for="detail"><p>Give Details</p> </label>
-                <textarea name="detail" id="detail" placeholder="Enter here"></textarea>
-            </div>
-
-
-
-
-
-      <input class="submit_box" type="submit" value="SUBMIT" >
-            
-    </main>
-
+   
+      </fieldset>
+   
+      <div id="dropdown">
+        <p>Fav about this</p>
+          <select>
+            <option value="0">Good</option>
+            <option value="1">Bad</option>
+            <option value="2">Happy</option>
+            <option value="3">Evil</option>
+            <option value="4">Charming</option>
+        </select>
+   
+      </div>
+   
+      <fieldset>
+   
+        <p>Check all that apply</p>
+        <label class="checko">
+          <p class="left_item">Apple </p><input type="checkbox" name="check" id="check" value="apple">
+        </label>
+        <label class="checko">
+          <p class="left_item">Bake </p><input type="checkbox" name="check" id="check" value="bake">
+        </label>
+        <label class="checko">
+          <p class="left_item">Coke</p><input type="checkbox" name="check" id="check" value="coke">
+        </label>
+        <label class="checko">
+          <p class="left_item">Duke</p><input type="checkbox" name="check" id="check" value="duke">
+        </label>
+        <label class="checko">
+          <p class="left_item">Egg</p><input type="checkbox" name="check" id="check" value="egg">
+        </label>
+        <label class="checko">
+          <p class="left_item">Frog</p><input type="checkbox" name="check" id="check" value="frog">
+        </label>
+        <label class="checko">
+          <p class="left_item">Great</p><input type="checkbox" name="check" id="check" value="great">
+        </label>
+        <label class="checko">
+          <p class="left_item">Hero</p><input type="checkbox" name="check" id="check" value="hero">
+        </label>
+        <label class="checko">
+          <p class="left_item">India</p><input type="checkbox" name="check" id="check" value="india">
+        </label>
+   
+      </fieldset>
+   
+      <div class="text_box details">
+        <label for="detail">
+          <p>Give Details</p>
+        </label>
+        <textarea name="detail" id="detail" placeholder="Enter here"></textarea>
+      </div>
+   
+      <input id="submit" type="submit" value="SUBMIT">
+   
+    </form>
 
 
 
