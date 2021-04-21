@@ -1,0 +1,176 @@
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oswald:wght@300;400;700&family=Staatliches&family=Teko:wght@500&family=Wallpoet&display=swap');
+
+$bgcolor:rgba(116, 110, 110, 0.603);
+$scheme_1:#0B0C10;
+$scheme_2:#1f2833;
+$scheme_3:#c5c6c7;
+$scheme_4:#66fcf1;
+$scheme_5:#45a29e;
+$scheme_2_trans:#0b0c105b;
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: $scheme_2;
+}
+
+h2{
+    text-decoration: underline;
+}
+#header{
+    background-color:$scheme_2_trans;
+    z-index: 2;
+   display: inline-block;
+ 
+ .flex-row{
+     align-items: center;
+ }
+
+    
+    h1,a,i{
+        font-size: 1.2rem;
+    }
+    h1,a{
+        font-family: 'Teko', sans-serif;
+        font-weight: 700;
+        color:rgb(191, 219, 211);
+    }
+
+    i{
+        color:$scheme_4
+    }
+
+    .dropdown-menu{
+        background-color: $scheme_2;
+        a:hover{
+            color:$scheme_2_trans;
+        }
+        .dropdown-item{
+            color:whitesmoke;
+            
+        }
+    }
+
+ }
+
+
+.time{
+    padding-top:50px;
+    background:url(../images/bg.jpg)center/cover fixed no-repeat;
+    #hello{
+        font-family: 'Oswald', sans-serif;
+        font-size: 20vw;
+        overflow: hidden;
+        color:$scheme_4;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .clock-display{
+        font-size:4vw;
+        letter-spacing: 5px;
+        margin-top:-20px;
+        width:40vw;
+        color:$scheme_4;
+        margin: auto;
+        background-color:$scheme_2_trans;
+        border-radius:35px; 
+        font-family: 'Wallpoet', cursive;
+        font-weight: bold;
+
+}
+}
+
+
+
+#waiting_for{
+    margin-top:0px;
+    h2{
+        
+        color:$scheme_3;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-decoration: none;     
+        // text-shadow:-2px 3px 5px rgba(230, 220, 220, 0.884),
+        // 3px 3px 5px rgba(0, 0, 0, 0.5);;
+    }
+    .container-md{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        .card{
+            height:300px;
+            background-color:#1f2833;
+            margin-bottom:7vh;
+            margin-right:5vw;
+            width:18rem;
+            color:$scheme_3;
+
+            .card-img-top{
+                height:100px;
+            }
+        }
+    
+    }
+    
+
+}
+
+
+main{
+    // background:url("../images/pexels-karolina-grabowska-4464438.jpg")center/cover fixed no-repeat;
+    // background-color:rgba(194, 194, 194, 0.864);
+    background-color: $scheme_2;
+}
+
+#aboutMe_section{
+
+    h2{
+        color: $scheme_3;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        font-weight: bolder;
+        font-family: 'Staatliches', cursive;
+    }
+
+    p{
+        color: $scheme_3;
+        // background-color:rgba(0, 0, 0, 0.672);
+        border-radius: 5px;
+        line-height:2.5em;
+        font-size: 1.5rem;
+    }
+
+}
+
+#projects{
+h2{
+    color:$scheme_3;
+    margin-bottom: 50px;
+    font-family: 'Staatliches', cursive;
+}
+    .card{
+        width:22rem;
+        height:40vh;
+    }
+
+
+    .container-fluid .row{
+        margin-bottom:70px;
+    }
+}
+
+
+footer{
+    padding:15px;
+    background-color:$scheme_5;
+    font-weight: bolder;
+    font-family: 'Staatliches', cursive;
+  
+}
+
+
